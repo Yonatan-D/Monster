@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="NewApi" severity="ignore">
+        <ignore path="src/edu/yonatan/activity/Accountflag.java" />
+        <ignore path="src/edu/yonatan/activity/AddInaccount.java" />
+        <ignore path="src/edu/yonatan/activity/AddOutaccount.java" />
+        <ignore path="src/edu/yonatan/activity/Login.java" />
+        <ignore path="src/edu/yonatan/activity/Sysset.java" />
+    </issue>
+</lint>

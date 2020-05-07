@@ -1,0 +1,102 @@
+@CHARSET "UTF-8";
+.test {
+	margin-top: 180px;
+}
+.toolbar {
+	background-color: #4FC3A1;
+	width: 40vw;
+	height: 150px;
+	margin: 0 auto;
+	margin-top: 90px;
+	box-shadow: 0 2px 5px #ccc;
+	border-radius: 10px 10px 0 0;
+}
+
+.toolbar #testTime {
+	margin: 10px 0 0 0;
+	text-align: center;
+	color: #324960;
+}
+
+.toolbar #exitTest {
+	padding: 0 10px 5px 5px;
+	color: #FFF;
+	border-radius: 10px 2px;
+	background-color: #324960;
+}
+
+.toolbar h4 {
+	color: #FFF;
+	width: 100px;
+	margin: 0 auto;
+}
+
+.toolbar #prebtn {
+	float: left;
+	margin-left: 10px;
+}
+
+.toolbar #nextbtn {
+	float: right;
+	margin-right: 10px;
+}
+
+.testarea {
+	width: 1200vw;
+	height: 300px;
+	display: flex;
+}
+
+.testarea .quest {
+	margin: 0 30vw;
+	width: 40vw;
+	height: 300px;
+	display: inline-block;
+	text-align: left;
+	border-radius: 0 0 10px 10px;
+	box-shadow: 0 2px 5px #ccc;
+}
+
+.testarea p {
+	margin: 15px;
+	word-wrap:break-word;
+}
+
+.testarea input {
+	margin: 4px 15px;
+}
+
+.testarea .quest img {
+	height: 150px;
+	margin: 10px;
+	float: right;
+}
+
+.btn {
+	margin-top: 40px;
+	padding: 5px 10px;
+	color: #4FC3A1;
+	background-color: #FFF;
+	height: 20px;
+	line-height: 20px;
+	border-radius: 20px;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+#testform {
+	text-align: center;
+}
+
+#testform input[type="submit"] {
+	background-color: #FFF;
+	border: 1px solid #CCC;
+	padding: 5px 10px;
+	margin: 10px;
+	cursor: pointer;
+	outline-color: #4FC3A1;
+}
+
+#testform input[type="submit"]:hover {
+	border-color: #4FC3A1;
+}

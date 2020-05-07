@@ -1,0 +1,36 @@
+@CHARSET "UTF-8";
+
+body {
+	display: flex;
+	justify-content: center;
+	overflow-x: hidden;
+}
+
+.tableArea {
+	width: 60vw;
+}
+
+.pieChart {
+	position: absolute;
+	top: 120px;
+	left: 50px;
+}
+
+.pieChart .pieChart-colorInfo {
+	
+}
+
+.pieChart .pieChart-colorInfo div {
+	width: 20px;
+	height: 15px;
+	margin: 0 10px;
+	display: inline-block;
+}
+
+.pieChart .pieChart-colorInfo .red {
+	background-color: #F7464A;
+}
+
+.pieChart .pieChart-colorInfo .green {
+	background-color: #46BFBD;
+}

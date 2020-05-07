@@ -1,0 +1,218 @@
+/* 放在最前便于获取keyframes对象 */
+@keyframes cover { 
+    0%,30% {transform: translate(0vw);}
+    35%,65% {transform: translate(-100vw);}
+    70%,100% {transform: translate(-200vw);}
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+.header {
+    color: white!important;
+    text-shadow: none!important;
+    border: none!important;
+    background-color: #3498db!important;
+}
+.delBtn {
+    color: #3498db!important;
+    text-shadow: none!important;
+    background-color: #3498db!important;
+    border: none!important;
+    box-shadow: none!important;
+}
+/* 轮播图显示区域 */
+.box {
+    width: 100vw;
+    height: 33vh;
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+}
+.slideShow {
+    display: flex;
+    width: 300vw;
+    height: 30vh;
+    position: absolute;
+    transition: 1s;
+    /* animation: cover 10s infinite alternate; */
+}
+.slideShow-container .sldShow-inside-img {
+    width: 100vw;
+    height: 30vh;
+    object-fit: cover;  /* 宽高比不匹配时裁剪中间部分 */
+}
+/* 修改标签样式 */
+input {
+    display: none;
+}
+label {
+    position: absolute;
+    bottom: 0;
+    transform: translate(-50%, 0);
+    width: 6px;
+    height: 6px;
+    border: 15px; /* 扩大触摸区域 */
+    /* border: 15px solid red; */
+    border-radius: 50%;
+    background-color: #ddd;
+    z-index: 2;
+}
+/* 单独设置小圆点的位置 */
+label:nth-of-type(1) {
+    left: 40vw;
+}
+label:nth-of-type(2) {
+    left: 50vw;
+}
+label:nth-of-type(3) {
+    left: 60vw;
+}
+input:checked+label {
+    background: #3498db;
+}
+/* 选中小圆点移动图片 */
+input:nth-of-type(1):checked~.slideShow{
+    transform: translate(0);
+}
+input:nth-of-type(2):checked~.slideShow{
+    transform: translate(-100vw);
+}
+input:nth-of-type(3):checked~.slideShow{
+    transform: translate(-200vw);
+}
+/* 轮播图新闻标题 */
+.slideShow-container .sldShow-inside-tit {
+    position: absolute;
+    top: 25vh;
+    width: 100%;
+    height: 5vh;
+    padding-left: 0.5em;
+    font-size: 1.1em;
+    font-weight: normal;
+    line-height: 5vh;
+    text-shadow: none;
+    /* overflow: hidden;
+    text-overflow: ellipsis; */
+    color: #fff;
+    background: linear-gradient(rgba(0,0,0,0), rgb(0,0,0,0.2));/* 背景色带透明度的渐变 */
+}
+/* 刷新按钮样式 */
+.refreshBtn {
+    position: fixed;
+    right: 4vw;
+    bottom: 4vw;
+    width: 12vw;
+    height: 12vw;
+    border-radius: 50%;
+    background: #3498db url(../img/icon_refresh.png) no-repeat center;
+    background-size: 60%;
+}
+.refreshBtn:active {
+    background-color: #0f66a0;
+    transition: 0.2s;
+}
+/* 列表样式 */
+#main {
+    background-color: #fff;
+}
+.ui-item {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    border-width: 0;
+    width: 94%;
+    margin: 0 auto;
+    border-bottom-width: 1px;
+    border-style: solid;
+    border-color: #ddd;
+    padding: 10px 0px;
+    text-decoration: none;
+}
+.ui-item:active {
+    background-color: #eeeeee;
+}
+.ui-item .ui-item-img {
+    max-width: 60vw; 
+    height: 25vw;
+    margin-right: 10px;
+}
+.ui-item .ui-item-img > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+.ui-item .ui-item-msg {
+    width: 100%;
+    color: #222222;
+}
+.ui-item .ui-item-msg > h1 {
+    font-size: 1em;
+    display: block;
+    margin: .45em 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.ui-item .ui-item-msg > p {
+    color: #828c9b;
+    font-size: .8em;
+    font-weight: 400;
+    display: block;
+    margin: .6em 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+/* 文章样式 */
+.article {
+    padding: 1em;
+}
+.article .title {
+    font-size: 1.5em;
+    text-align: center;
+}
+.article .info {
+    width: 55vw;
+    margin: 0 auto;
+    padding: 1em;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    color: #acacac;
+    display: flex;
+    justify-content: space-around;
+}
+/* 文字两端对齐 */
+.article .container {
+    text-align: justify;
+}
+/* 默认模板 */
+.article .container > img {
+    width: 100%;
+    margin: 10px 0;
+}
+.article .container > p {
+    margin: 15px 0;
+    color: #4f4f4f;
+    line-height: 170%;
+    letter-spacing: 2px;
+}
+.article .container > span {
+    padding: 2px 8px;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 20px;
+    color: white;
+    background-color: #4f4f4f;
+    text-shadow: none;
+    font-weight: bold;
+}
+.backBtn {
+    color: #3498db!important;
+    text-shadow: none!important;
+    background-color: #3498db!important;
+    border: none!important;
+    box-shadow: none!important;
+}

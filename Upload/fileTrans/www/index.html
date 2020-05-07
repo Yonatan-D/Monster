@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="jq/jquery-1.9.1.min.js"></script>
+    <script src="jq/jquery.mobile-1.4.0.min.js"></script>
+    <link rel="stylesheet" href="jq/jquery.mobile-1.4.0.min.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <title>fileTransfer</title>
+</head>
+<body>
+    <div data-role="header" data-position="fixed"><h1>服务器文件传输</h1></div>
+    <!-- 上传选择文件 -->
+    <input type="file" id="myfile"> 
+    <input type="submit" id="upBtn" value="上传选择文件">
+    <!-- 上传指定文件 -->
+    <button id="uplogoBtn">上传logo.png</button>
+    <!-- 文件传输进度 -->
+    <div id="progress">progress</div>
+    <!-- 查看服务器文件 -->
+    <button id="checkBtn">查看服务器文件</button>
+    <h3 id="textView"></h3>
+
+
+    <script src="cordova.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

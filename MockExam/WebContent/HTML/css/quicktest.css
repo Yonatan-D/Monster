@@ -1,0 +1,64 @@
+@CHARSET "UTF-8";
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.testarea {
+	text-align: center;
+	border: 1px dotted #68768A;
+	margin: 100px;
+	padding: 20px 40px;
+	width: 40vw;
+}
+
+.testarea h4 {
+	color: #4f4f4f;
+	text-align: right;
+}
+
+.testarea a {
+	float: left;
+	text-decoration: none;
+	margin: 16px 0;
+	padding: 5px 10px;
+	color: #FFF;
+	background-color: #68768A;
+	height: 20px;
+	line-height: 20px;
+	border-radius: 20px;
+}
+
+.testarea .quest {
+	margin: 20px 0;
+	padding: 20px 50px;
+	border-radius: 10px;
+	box-shadow: 2px 2px 5px #ccc;
+	text-align: left;
+}
+
+.testarea .quest p {
+	margin-top: 0;
+	word-wrap:break-word; 
+}
+
+.testarea .quest img {
+	margin-top: 20px;
+	width: 200px;
+}
+
+.testarea input[type="submit"], .testarea input[type="button"] {
+	background-color: #FFF;
+	border: 1px solid #CCC;
+	padding: 5px 10px;
+	margin: 0 5px;
+	cursor: pointer;
+	outline-color: #4FC3A1;
+}
+
+.testarea input[type="submit"]:hover, .testarea input[type="button"]:hover
+	{
+	border-color: #4FC3A1;
+}

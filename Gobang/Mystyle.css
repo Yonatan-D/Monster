@@ -1,0 +1,151 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	overflow: hidden;
+}
+
+#contain img {
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+#switch {
+	margin-top: 150px;
+	text-align: center;
+}
+
+#logo a{
+	display: inline-block;
+	text-decoration: none;
+	padding: 70px 20px 0 20px;
+	font-family: Microsoft YaHei;
+	font-size: 10px;
+	font-weight: normal;
+	color: #2d3436;
+}
+
+#robot {
+	background: url(image/robot.png) no-repeat;
+	background-size: 35px;
+	background-position: center;
+}
+
+#charg {
+	background: url(image/test.png) no-repeat;
+	background-size: 35px;
+	background-position: center;
+}
+
+#UI p {
+	position: absolute;
+	width: 100%;
+	bottom: 10px;
+	text-align: center;
+	font-family: Microsoft YaHei;
+	font-size: 9px;
+	letter-spacing: 1px;
+}
+
+#header {
+	width: 100%;
+	height: 50px;
+	top: 0;
+	position: absolute;
+	background-color: #FFFFFF;
+	border: none;
+}
+
+#header a {
+	margin-left: 80%;
+	margin-top: 7px;
+	padding: 5px 10px;
+/*	width: 15%;
+	height: 50%;*/
+
+	/*line-height: 26px;*/
+
+	border: 0;
+	background-color: #515151;
+	box-shadow: none;
+
+	font-size: 14px;
+	font-weight: normal;
+	color: #FFFFFF;
+
+	float: right;
+}
+
+#header #gobang {
+	height: 100%;
+	float: left;
+	animation: rotateplane 1.2s ease-in-out 0s 1 alternate forwards;
+}
+
+	
+@keyframes rotateplane {
+	0% {
+		transform: perspective(120px) rotateX(0deg) rotateY(0deg);} 
+	50% {
+		transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);} 
+}
+
+#header #user {
+	width: 30px;
+	height: 30px;
+	margin-left: 70%;
+	margin-top: 10px;
+
+	border-radius: 100%;
+
+	background: url(image/user.png) no-repeat;
+	background-size: 85%;
+	background-position: center;
+	background-color: #e6e6e6;
+}
+
+#footer {
+	width: 100%;
+	height: 55px;
+	line-height: 55px;
+	bottom: 0;
+	position: fixed;
+	text-align: center;
+	background-color: #FFFFFF;
+}
+
+#footer a {
+	margin: 0 12%;
+	padding: 0;
+	width: 30px;
+	height: 40px;
+
+	border: 0;
+	background-color: #FFFFFF;
+	box-shadow: none;
+
+	font-size: 12px;
+	font-weight: normal;
+}
+
+#footer a:active {
+	/*background-color: #e6e6e6;*/
+}
+
+#footer img {
+	display: block;
+	width: 25px;
+	margin: 0 auto;
+}
+
+#content {
+	/*background-image: url(image/desk.png);*/
+	background-color: #FFFFFF;
+	background-size: 100% 100%;
+}
+
+#newWorld {
+	background: url(image/user.png);
+}

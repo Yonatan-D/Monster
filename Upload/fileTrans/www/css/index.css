@@ -1,0 +1,11 @@
+/* 传输进度 */
+#progress {
+    border: 2px solid blueviolet;
+    font-size: 1.25em; 
+    color: blueviolet;
+    text-shadow: none;
+    height: 100px;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}

@@ -1,0 +1,10 @@
+[
+    {
+        "name": "MyFirstApp",
+        "tags": ["HTML", "CSS", "JavaScript", "Vue"]
+    },
+    {
+        "name": "WebService",
+        "tags": ["Java", "HTML5", "Tomcat", "MySQL"]
+    }
+]

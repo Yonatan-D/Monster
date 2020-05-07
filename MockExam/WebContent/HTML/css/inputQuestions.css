@@ -1,0 +1,94 @@
+@CHARSET "UTF-8";
+body {
+
+}
+.editArea {
+	width: 100%;
+	margin: 100px auto;
+	padding: 0 100px;
+}
+.editArea a {
+	color: #FFF;
+	font-weight: bold;
+	text-decoration: none;
+	background-color: #4FC3A1;
+	padding: 10px 5px;
+}
+.editForm {
+	color: #4c4c4c;
+	font-size: 18px;
+	font-weight: bold;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 80vw;
+	background-color: #FFF;
+}
+
+.editForm p {
+	color: #888888;
+	font-size: 14px;
+	font-weight: normal;
+	margin-bottom: 40px;
+}
+
+.editForm .updatetext, .editForm .updateimg {
+	margin: 50px;
+}
+
+#cover {
+	display: none;
+}
+
+.cover {
+	width: 420px;
+	height: 270px;
+	border: 1px solid buttonface;
+	margin: 15px 0 15px 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.cover img {
+	object-fit: cover;
+}
+
+input {
+	margin: 15px 0;
+	line-height: 25px;
+}
+
+input[name="R"] {
+	margin: 0 30px 0 5px;
+}
+
+#addImgBtn {
+	float: right; width : 70px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	font-size: 15px;
+	color: #FFF;
+	background-color: #4FC3A1;
+	border: 1px solid green;
+	cursor: pointer;
+	width: 70px;
+}
+
+input[type="submit"], input[type="text"], textarea {
+	background-color: #FFF;
+	border: 1px solid #CCC;
+	padding: 5px 10px;
+	margin: 0;
+	outline-color: #4FC3A1;
+	margin: 12px 0;
+}
+
+input[type="text"], textarea{
+	cursor: text;
+}
+
+input[type="submit"]:hover {
+	border-color: #4FC3A1;
+}

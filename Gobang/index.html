@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>五子棋GobangApp项目</title>
+	<link rel="stylesheet" type="text/css" href="Mystyle.css">	
+	<link rel="stylesheet" type="text/css" href="ball3D.css">
+	<link rel="stylesheet" type="text/css" href="msgPNG.css">
+	<link rel="stylesheet" type="text/css" href="jquery/jquery.mobile-1.4.0.min.css">
+	<script type="text/javascript" src="jquery/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="jquery/jquery.mobile-1.4.0.min.js"></script>
+	<script type="text/javascript" src="Myjs.js"></script>
+</head>
+<body onload="load()">
+
+	<div data-role="page" id="UI">
+		<div id="logo">
+			<div id="contain">
+				<img src="image/logo.png">
+				<div class='wrap' id='wrap1'>
+					<div class='part' id='part1'></div>
+				</div>
+
+				<div class='wrap' id='wrap2'>
+					<div class='part' id='part2'></div>
+				</div>
+
+				<div class='wrap' id='wrap3'>
+					<div class='part' id='part3'></div>
+				</div>
+
+				<div class='wrap' id='wrap4'>
+					<div class='part' id='part4'></div>
+				</div>
+
+				<div id="switch">
+					<a id="robot" href="#game" onclick="robot()">人机对弈</a>
+					<a id="charg" href="#game" onclick="charg()">练习模式</a>
+				</div>
+			</div>
+		</div>
+		<p>MADE BY YONATAN</p>
+	</div>
+
+	<div data-role="page" id="game">
+		<div data-role="header" id="header">
+			<img id="gobang" src="image/logo-min.png">
+			<div id="user"></div>
+			<a id="back" onclick="backmenu()">返回</a>
+		</div>
+		<div id="content">
+			<div id="user">
+<!-- 				<img src="image/head.jpg">
+				<h2>用户</h2>
+				<h4>棋手执黑棋</h4>
+				<div id="timer1">用时：00:00</div>
+				<div id="timer2">步时： 秒</div>
+
+				<!-- <canvas id="top"></canvas> --> -->
+
+			</div>
+			<div id="chessboard">
+				<div id="msg" class="none"></div>
+				<canvas id="canvas" onmousedown="play(event)"></canvas>
+			</div>
+		</div>
+		<div data-role="footer" id="footer">
+			<a href="#" id="restart" onclick="restart()"><img src="image/restart.png">重玩</a> 
+			<a href="#" id="giveup" onclick="giveup()"><img src="image/giveup.png">认输</a>
+			<a href="#" id="goback" onclick="goback()"><img src="image/goback.png">悔棋</a>
+		</div>
+	</div>
+
+	<div data-roel="page" id="newWorld" onclick="zhufu(event)"></div>
+
+</body>
+</html>

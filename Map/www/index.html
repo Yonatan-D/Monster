@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=oTezs9oXNCgkSz5ENWgsPcC4aVk41C6G"></script>
+    <script src="http://api.map.baidu.com/library/GeoUtils/1.2/src/GeoUtils.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+
+    <title>map</title>
+</head>
+
+<body>
+
+    <!-- 搜索框 -->
+    <div class="search-box">
+        <input type="text" id="search-txt" class="search-txt" placeholder="Type to search">
+        <img src="img/del.png" id="del-btn" class="del-btn">
+        <span class="search-btn" id="search-btn">Go</span>
+    </div>
+
+    <!-- 地图主体 -->
+    <div id="map" class="map"></div>
+
+    <!-- 底部按钮 -->
+    <button id="btnCheckIn">Check In</button>
+
+    <!-- 抽屉按钮 -->
+    <button id="btnWatchPos" class="drawer">Track</button>
+    <button id="btnRange" class="drawer">Range</button>
+
+    <button id="btnon" class="switch">ON</button>
+    <button id="btnoff" class="switch">OFF</button>
+
+
+    <!-- 引用 -->
+    <script src="cordova.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

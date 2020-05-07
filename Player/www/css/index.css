@@ -1,0 +1,429 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Microsoft Yahei';
+}
+
+.header {
+    height: 90px;
+    text-shadow: none !important;
+    border: none !important;
+    color: white !important;
+    background-color: #429BCF !important;
+}
+
+.header h1 {
+    font-weight: normal;
+}
+
+.ui-header .ui-title {
+    font-size: 20px;
+}
+
+.header .addAudio {
+    width: 25px;
+    height: 25px;
+    margin: 0;
+    padding: 0;
+    background-image: url('../img/icon_localfile.png');
+    background-size: 25px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+#inputAudioFile {
+    line-height: 30px;
+    position: absolute;
+    opacity: 0;
+}
+
+.ui-input-text {
+    margin: 0;
+    border: none;
+}
+
+.ui-input-text input {
+    min-height: 0;
+    padding: 0;
+}
+
+.content {
+    padding: 0;
+    padding-top: 3px;
+    margin-top: -4px;
+}
+
+.navbar {
+    height: 37px;
+    background-color: #429BCF;
+    text-align: center;
+}
+
+.navbar a {
+    display: inline-block;
+    width: 30%;
+    height: 35px;
+    line-height: 35px;
+    font-size: 15px;
+    font-weight: normal;
+    color: white !important;
+    text-decoration: none;
+    text-shadow: none;
+    /* text-align: center; */
+    border-bottom: 3px solid white;
+}
+
+.navbar a:link {
+    border: none;
+}
+
+.navbar-Tab {
+    float: left;
+    transition: 0.2s;
+}
+
+.navbar-Rec {
+    float: right;
+    transition: 0.2s;
+}
+
+.navbar-Ply {
+    transition: 0.2s;
+}
+
+.navbar-Tab:active, .navbar-Rec:active, .navbar-Ply:active {
+    background-color: rgb(44, 130, 180);
+}
+
+.controlBox {
+    position: absolute;
+    bottom: 3vh;
+    width: 100%;
+    height: 10vh;
+    /* background-color: #429BCF; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnBox {
+    width: 80%;
+    height: 60%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-btnPlay {
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 40px !important;
+    background: url('../img/icon_play.png') no-repeat;
+    background-size: 40px;
+    /* 居中显示 */
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    display: inline-block;
+}
+
+.main-btnPause {
+    width: 40px!important;
+    height: 40px!important;
+    border-radius: 40px!important;
+    background: url('../img/icon_pause.png') no-repeat;
+    background-size: 40px;
+    /* 居中显示 */
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+
+    display: inline-block;
+
+
+}
+
+.main-btnStop {
+    width: 35px !important;
+    height: 35px !important;
+    border-radius: 35px !important;
+    background: url('../img/icon_main_stop.png') no-repeat;
+    background-size: 35px;
+
+    display: inline-block;
+    margin-left: 20px;
+
+}
+
+.main-btnNext {
+    width: 35px !important;
+    height: 35px !important;
+    border-radius: 35px !important;
+    background: url('../img/icon_main_next.png') no-repeat;
+    background-size: 35px;
+
+    display: inline-block;
+    margin: 0 20px 0 50px;
+
+}
+
+.main-btnPre {
+    width: 35px !important;
+    height: 35px !important;
+    border-radius: 35px !important;
+    background: url('../img/icon_main_pre.png') no-repeat;
+    background-size: 35px;
+
+    display: inline-block;
+    margin: 0 50px 0 20px;
+
+}
+
+.main-btnVolume {
+    width: 35px !important;
+    height: 35px !important;
+    border-radius: 35px !important;
+    background: url('../img/icon_volume.png') no-repeat;
+    background-size: 35px;
+
+    display: inline-block;
+    margin-right: 20px;
+
+}
+
+.player {
+    position: absolute;
+    bottom: 10vh;
+    width: 100%;
+    /* height: 50px; */
+    height: 6vh;
+    /* background-color: bisque; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.touchRange {
+    position: absolute;
+    left: 5%;
+    width: 90%;
+    height: 12px;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* 可触摸范围 */
+    /* background-color: orange; */
+}
+
+.slider {
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: lightgray;
+    background-position: center center;
+}
+
+.slider .progress {
+    width: 0;
+    height: 100%;
+    border-radius: 4px;
+    background-color: #429BCF;
+}
+
+.slider .controller {
+    position: absolute;
+    top: -2px;
+    width: 14px;
+    height: 14px;
+    border: 1px solid lightgray;
+    border-radius: 14px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider .controller span {
+    width: 4px;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #429BCF;
+    
+}
+
+.rotateIMG {
+    width: 100%;
+    height: 180px;
+    background-color: rgb(194, 224, 235);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rotateIMG-coverbg {
+    position: absolute;
+    top: 90px;
+    width: 100%;
+    height: 40px;
+    background-color: #429BCF;
+}
+
+#musicCover {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    border: 34px solid black; /* 简约唱片样式 */
+    background: url('../img/cover.jpg') no-repeat;
+    background-size: 100%;
+}
+
+/* 封面旋转效果 */
+.covera {
+    animation: cover1 25s linear infinite;
+}
+
+@keyframes cover1 {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+/* 停止后封面复位 */
+.coverb {
+    animation: cover2 25s linear infinite;
+}
+
+@keyframes cover2 {
+    0% {transform: rotate(0deg);}
+}
+
+#lyrics {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(194, 224, 235); /* 屏幕下半部分 */
+} 
+
+.player .musicName {
+    position: absolute;
+    top: 0;
+    left: 5%;
+    color: white;
+    text-shadow: none;
+}
+
+
+.showTime {
+    position: absolute;
+    top: 0;
+    right: 5%;
+    color: white;
+    text-shadow: none;
+}
+
+.footer {
+    height: 7vh;
+    background-color: white !important;
+}
+
+.footer-cover {
+    position: absolute;
+    margin: 1vh;
+    width: 5vh;
+    height: 5vh;
+    background: url('../img/cover.jpg') no-repeat;
+    background-size: 5vh;
+}
+
+.footer-musicInfo {
+    position: absolute;
+    left: 7vh;
+    top: 1vh;
+}
+
+.footer-btnPlay {
+    /* 暂时 */
+    position: absolute;
+    right: 7vh;
+
+    margin-right: 10px;
+    padding: 0;
+    width: 5vh !important;
+    height: 5vh !important;
+    border-radius: 5vh !important;
+    background: url('../img/icon_play.png') no-repeat;
+    background-size: 5vh;
+}
+
+.footer-btnPause {
+    /* 暂时 */
+    position: absolute;
+    right: 7vh;
+
+    margin-right: 10px;
+    padding: 0;
+    width: 5vh!important;
+    height: 5vh!important;
+    border-radius: 5vh!important;
+    background: url('../img/icon_pause.png') no-repeat;
+    background-size: 5vh;
+}
+
+.footer-btnStop {
+    /* 暂时 */
+    position: absolute;
+    right: 0;
+    bottom: 3px; 
+    
+    margin-right: 10px;
+    padding: 0;
+    width: 4.5vh !important;
+    height: 4.5vh !important;
+    border-radius: 4vh !important;
+    background: url('../img/icon_stop.png') no-repeat;
+    background-size: 4.5vh;
+}
+
+/* 录音动画 */
+.pic {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#pic-recAnime {
+    width: 230px;
+    height: 230px;
+    font-size: 40px;
+    color: white;
+    background: url("../img/pic.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+#pic-recNum {
+    position: absolute;
+    font-size: 40px;
+    color: white;
+}
+
+.recbtn {
+    float: left;
+    width: 40%;
+    height: 40px;
+    background-color: #429BCF;
+    margin: 25px 5%;
+    text-shadow: none;
+    text-align: center;
+    border-radius: 40px;
+    color: white;
+    line-height: 40px;
+}
